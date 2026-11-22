@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="register.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="form-card">
+      <h1>Create Account</h1>
+      <p class="subtitle">Create your account to get started!</p>
+
+      <form id="registerForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"
+               placeholder="Enter username" minlength="3" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter email address" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"
+               placeholder="Create password" minlength="8" required>
+
+        <button type="submit">Create Account</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+
+      <p class="switch-link">
+        
+        <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
